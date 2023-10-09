@@ -1,0 +1,12 @@
+.widget.hawkeye-map {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  user-select: none;
+  border: 2px solid orange;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px #2b2b2b;
+}

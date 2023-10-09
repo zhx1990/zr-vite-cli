@@ -1,0 +1,29 @@
+{
+  "Button": {
+    "textColorPrimary": "#FFFFFFFF",
+    "textColorHoverPrimary": "#FFFFFFFF",
+    "textColorPressedPrimary": "#FFFFFFFF",
+    "textColorFocusPrimary": "#FFFFFFFF",
+    "textColorDisabledPrimary": "#FFFFFFFF",
+    "textColorInfo": "#FFFFFFFF",
+    "textColorHoverInfo": "#FFFFFFFF",
+    "textColorPressedInfo": "#FFFFFFFF",
+    "textColorFocusInfo": "#FFFFFFFF",
+    "textColorDisabledInfo": "#FFFFFFFF",
+    "textColorPressedWarning": "#FFFFFFFF",
+    "textColorWarning": "#FFFFFFFF",
+    "textColorHoverWarning": "#FFFFFFFF",
+    "textColorFocusWarning": "#FFFFFFFF",
+    "textColorDisabledWarning": "#FFFFFFFF",
+    "textColorError": "#FFFFFFFF",
+    "textColorHoverError": "#FFFFFFFF",
+    "textColorPressedError": "#FFFFFFFF",
+    "textColorFocusError": "#FFFFFFFF",
+    "textColorDisabledError": "#FFFFFFFF",
+    "textColorSuccess": "#FFFFFFFF",
+    "textColorHoverSuccess": "#FFFFFFFF",
+    "textColorPressedSuccess": "#FFFFFFFF",
+    "textColorFocusSuccess": "#FFFFFFFF",
+    "textColorDisabledSuccess": "#FFFFFFFF"
+  }
+}

@@ -1,0 +1,25 @@
+.widget.distance-legend {
+  position: absolute;
+  bottom: 2px;
+  left: 120px;
+  width: 125px;
+  height: 25px;
+  user-select: none;
+
+  .label {
+    width: 100%;
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .scale-bar {
+    position: absolute;
+    top: 10px;
+    height: 10px;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+  }
+}

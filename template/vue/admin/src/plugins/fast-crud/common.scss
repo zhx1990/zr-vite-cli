@@ -1,0 +1,12 @@
+html:root {
+  --base-color: #fff;
+}
+
+/* 深色模式 */
+html.dark:root {
+  --base-color: #000;
+}
+
+.fs-container {
+  background-color: var(--base-color);
+}

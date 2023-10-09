@@ -1,0 +1,14 @@
+lib
+dist
+node_modules
+build/vite-plugins/*
+assets/*
+public/*
+docs
+webgl-heatmap.js
+patches/*
+*.js
+
+!.env-config.ts
+*.d.ts
+*.svg

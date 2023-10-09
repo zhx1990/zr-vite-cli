@@ -1,0 +1,702 @@
+{
+  "id": "3700599",
+  "name": "水利",
+  "font_family": "reservoir",
+  "css_prefix_text": "reservoir-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "124495",
+      "name": "警告",
+      "font_class": "jinggao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "18164959",
+      "name": "报警,警报,报警灯,危险",
+      "font_class": "alarm-full",
+      "unicode": "e871",
+      "unicode_decimal": 59505
+    },
+    {
+      "icon_id": "2778122",
+      "name": "居民居住地轮廓",
+      "font_class": "juminjuzhudilunkuo",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "2778148",
+      "name": "防汛形势部署",
+      "font_class": "fangxunxingshibushu",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "2778152",
+      "name": "防汛应急指挥",
+      "font_class": "fangxunyingjizhihui",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "2778166",
+      "name": "水利工程信息统计",
+      "font_class": "shuiligongchengxinxitongji",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "2778168",
+      "name": "实时数据展示",
+      "font_class": "shishishujuzhanshi",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "2778177",
+      "name": "地图管理",
+      "font_class": "dituguanli",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "2778188",
+      "name": "个人中心",
+      "font_class": "gerenzhongxin",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "2778209",
+      "name": "数据服务",
+      "font_class": "shujufuwu",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "2778211",
+      "name": "功能服务",
+      "font_class": "gongnengfuwu",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "2778212",
+      "name": "平台应用",
+      "font_class": "pingtaiyingyong",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "8793740",
+      "name": "取用水户",
+      "font_class": "quyongshuihu",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "9425595",
+      "name": "水土保持站",
+      "font_class": "shuitubaochizhan",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "9429566",
+      "name": "墒情站",
+      "font_class": "shangqingzhan1",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "9430094",
+      "name": "河网",
+      "font_class": "hewang",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "9466851",
+      "name": "堤防面",
+      "font_class": "difangmian",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "9466852",
+      "name": "部署图",
+      "font_class": "bushutu",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "9466853",
+      "name": "河长制",
+      "font_class": "hechangzhi",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "9466854",
+      "name": "堤防标注",
+      "font_class": "difangbiaozhu",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "9466855",
+      "name": "抗洪兵力",
+      "font_class": "kanghongbingli",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "9466856",
+      "name": "河长制河段",
+      "font_class": "hechangzhiheduan",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "9466857",
+      "name": "居民地",
+      "font_class": "jumindi",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "9466858",
+      "name": "水事影像点",
+      "font_class": "shuishiyingxiangdian",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "9466859",
+      "name": "水文专题",
+      "font_class": "shuiwenzhuanti",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "9466860",
+      "name": "省级区划",
+      "font_class": "shengjiquhua",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "9466861",
+      "name": "堤防线",
+      "font_class": "difangxian",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "9466862",
+      "name": "水资源",
+      "font_class": "shuiziyuan",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "9466863",
+      "name": "河长制河段标注",
+      "font_class": "hechangzhiheduanbiaozhu",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "9466864",
+      "name": "市级区划",
+      "font_class": "shijiquhua",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "9466865",
+      "name": "乡级区划",
+      "font_class": "xiangjiquhua",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "9466866",
+      "name": "县级区划",
+      "font_class": "xianjiquhua",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "9466867",
+      "name": "水雨情监测点",
+      "font_class": "shuiyuqingjiancedian",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "10158781",
+      "name": "蓄滞洪区",
+      "font_class": "xuzhihongqu",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "2116676",
+      "name": "入河湖排污口",
+      "font_class": "ruhehupaiwukou",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "2116677",
+      "name": "水库点",
+      "font_class": "shuikudian",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "2116678",
+      "name": "水利行业单位",
+      "font_class": "shuilihangyedanwei",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "2116679",
+      "name": "水库",
+      "font_class": "shuiku",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "2116681",
+      "name": "水电站",
+      "font_class": "shuidianzhan",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "2116682",
+      "name": "水利社会团体",
+      "font_class": "shuilishehuituanti",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "2116683",
+      "name": "水文站",
+      "font_class": "shuiwenzhan",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "2116684",
+      "name": "水利企业",
+      "font_class": "shuiliqiye",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "2116685",
+      "name": "水利行政机关",
+      "font_class": "shuilihangzhengjiguan",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "2116686",
+      "name": "水利事业单位",
+      "font_class": "shuilishiyedanwei",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "2116687",
+      "name": "水闸",
+      "font_class": "shuizha",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "2116689",
+      "name": "乡镇水利管理单位",
+      "font_class": "xiangzhenshuiliguanlidanwei",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "2116690",
+      "name": "橡胶坝",
+      "font_class": "xiangjiaoba",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "2116691",
+      "name": "泵站",
+      "font_class": "bengzhan",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "2116692",
+      "name": "引调水工程大比例尺调水",
+      "font_class": "yintiaoshuigongchengdabilichitiaoshui",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "2116693",
+      "name": "大坝",
+      "font_class": "daba",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "2116694",
+      "name": "工业企业用水",
+      "font_class": "gongyeqiyeyongshui",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "2116695",
+      "name": "地表水水源地",
+      "font_class": "dibiaoshuishuiyuandi",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "2116696",
+      "name": "堤防工程",
+      "font_class": "difanggongcheng",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "2116697",
+      "name": "公共供水企业",
+      "font_class": "gonggonggongshuiqiye",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "2116698",
+      "name": "规模化畜禽养殖场",
+      "font_class": "guimohuaxuqinyangzhichang",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "2116699",
+      "name": "河流面",
+      "font_class": "heliumian",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "2116700",
+      "name": "湖泊",
+      "font_class": "hubo",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "2116701",
+      "name": "河湖取水口",
+      "font_class": "hehuqushuikou",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "2116702",
+      "name": "河流",
+      "font_class": "heliu",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "2116703",
+      "name": "建筑业与第三产业用水",
+      "font_class": "jianzhuyeyudisanchanyeyongshui",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "2116704",
+      "name": "灌区",
+      "font_class": "guanqu",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "2116705",
+      "name": "渠道",
+      "font_class": "qudao",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "2116706",
+      "name": "农村供水工程",
+      "font_class": "nongcungongshuigongcheng",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "2117105",
+      "name": "水井",
+      "font_class": "shuijing",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "2167152",
+      "name": "雨量站",
+      "font_class": "yuliangzhan",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "2167172",
+      "name": "水库水文站",
+      "font_class": "shuikushuiwenzhan",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "2167219",
+      "name": "墒情站",
+      "font_class": "shangqingzhan",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "2167247",
+      "name": "地下水站",
+      "font_class": "dixiashuizhan",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "2167296",
+      "name": "河道水文站",
+      "font_class": "hedaoshuiwenzhan",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "2167310",
+      "name": "河道水位站",
+      "font_class": "hedaoshuiweizhan",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "2249331",
+      "name": "普通点",
+      "font_class": "aaa",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "2249411",
+      "name": "自由绘线",
+      "font_class": "aaa1",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "2249417",
+      "name": "普通面",
+      "font_class": "aaa2",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "2249426",
+      "name": "一般箭头",
+      "font_class": "aaa3",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "2249442",
+      "name": "燕尾箭头",
+      "font_class": "aaa4",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "2249455",
+      "name": "双箭头",
+      "font_class": "aaa5",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "2252269",
+      "name": "灾害",
+      "font_class": "zaihai",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "2253794",
+      "name": "普通线",
+      "font_class": "putongxian",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "2429449",
+      "name": "数据采集",
+      "font_class": "shujucaiji",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "2761044",
+      "name": "水位站",
+      "font_class": "shuiweizhan",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "2761284",
+      "name": "水质监测站",
+      "font_class": "shuizhijiancezhan",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "2761927",
+      "name": "取用水测站",
+      "font_class": "quyongshuicezhan",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "2777434",
+      "name": "桥梁工程",
+      "font_class": "qiaolianggongcheng",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "2777458",
+      "name": "企事业单位调查",
+      "font_class": "qishiyedanweitiaocha",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "2777469",
+      "name": "路涵工程",
+      "font_class": "luhangongcheng",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "2777482",
+      "name": "成灾水位点",
+      "font_class": "chengzaishuiweidian",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "2777497",
+      "name": "塘堰坝工程",
+      "font_class": "tangyanbagongcheng",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "2777761",
+      "name": "城集镇居民",
+      "font_class": "chengjizhenjumin",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "2777788",
+      "name": "沿河村落人口",
+      "font_class": "yanhecunlarenkou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "2777884",
+      "name": "历史山洪灾害",
+      "font_class": "lishishanhongzaihai",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "2777891",
+      "name": "安置点",
+      "font_class": "anzhidian",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "2777895",
+      "name": "简易雨量站",
+      "font_class": "jianyiyuliangzhan",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "2777897",
+      "name": "自动监测站",
+      "font_class": "zidongjiancezhan",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "2777900",
+      "name": "简易水位站",
+      "font_class": "jianyishuiweizhan",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "2777908",
+      "name": "无线预警广播站",
+      "font_class": "wuxianyujingguangbozhan",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "2777990",
+      "name": "历史最高水位点",
+      "font_class": "lishizuigaoshuiweidian",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "2778001",
+      "name": "需防洪治理山洪沟",
+      "font_class": "xufanghongzhilishanhonggou",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "2778050",
+      "name": "转移路线",
+      "font_class": "zhuanyiluxian",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "2778057",
+      "name": "危险区",
+      "font_class": "weixianqu",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    }
+  ]
+}

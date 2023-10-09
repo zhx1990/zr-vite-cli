@@ -1,0 +1,27 @@
+.widget.zoom-controller {
+  position: absolute;
+  top: 90px;
+  right: 36.5px;
+  box-sizing: border-box;
+  width: 24px;
+  height: 60px;
+  line-height: 1.2rem;
+  text-align: center;
+  pointer-events: auto;
+  user-select: none;
+  background: #3f4854;
+  border: solid 1px rgba(255, 255, 255, 20%);
+  border-radius: 100px;
+
+  .zoom-in,
+  .refresh,
+  .zoom-out {
+    cursor: pointer;
+
+    svg {
+      width: 10px;
+      height: 10px;
+      fill: #fff;
+    }
+  }
+}

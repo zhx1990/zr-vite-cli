@@ -1,0 +1,26 @@
+@import './transition.css';
+@import './reset.css';
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+.fs-table-columns-filter .component--list .component--list-item {
+  background-color: transparent !important;
+}
+
+.fs-layout-card .fs-layout-card-body .fs-crud-actionbar,
+.fs-layout-card .fs-layout-card-body .fs-crud-toolbar {
+  display: flex;
+}
+
+.div-icon {
+  color: #fff;
+  background-color: transparent !important;
+}
+
+.dark .div-icon {
+  color: #fff;
+}

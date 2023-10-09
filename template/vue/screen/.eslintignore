@@ -1,0 +1,12 @@
+lib
+dist
+node_modules
+build/vite-plugins/*
+assets/*
+public/*
+docs
+*.js
+
+!.env-config.ts
+*.d.ts
+*.svg

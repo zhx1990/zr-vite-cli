@@ -1,29 +1,29 @@
 {
   "name": "zr-vite-cli",
-  "version": "1.0.0",
+  "version": "1.1.5",
   "author": "HaoXian",
   "description": "",
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
   "type": "module",
   "bin": {
-    "zr-vite-cli": "./dist/index.mjs"
+    "zr-vite-cli": "./dist/index.cjs"
   },
   "files": [
-    "index.js",
+    "package.json",
+    "README.md",
     "dist",
     "template"
   ],
   "scripts": {
     "dev": "unbuild --stub",
     "build": "unbuild",
-    "start": "esno src/index.ts",
+    "start": "esno dist/index.cjs",
     "release": "npm publish"
   },
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhx1990/zr-cli.git"
+    "url": "https://github.com/zhx1990/zr-vite-cli.git"
   },
   "license": "MIT",
   "devDependencies": {
@@ -32,12 +32,11 @@
     "@types/prompts": "^2.0.14",
     "bumpp": "^8.2.1",
     "esno": "^0.16.3",
-    "kolorist": "^1.6.0",
-    "pnpm": "^7.11.0",
     "unbuild": "^0.8.11"
   },
   "dependencies": {
     "fs-extra": "^10.1.0",
+    "kolorist": "^1.6.0",
     "prompts": "^2.4.2"
   }
 }

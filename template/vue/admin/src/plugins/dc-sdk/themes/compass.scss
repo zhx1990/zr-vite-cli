@@ -1,0 +1,57 @@
+.widget.compass {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+
+  .out-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    fill: #3f4854;
+
+    svg {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .gyro {
+    position: relative;
+    top: 50%;
+    box-sizing: border-box;
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  .rotation_marker {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 51px;
+    height: 51px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+  }
+}
+
+.widget.compass .gyro-active,
+.widget.compass .gyro-bg:hover + .gyro {
+  fill: #68adfe;
+}

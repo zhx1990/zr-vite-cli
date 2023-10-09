@@ -1,0 +1,18 @@
+@import './transition.css';
+@import './reset.css';
+
+html,
+body,
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+.fs-table-columns-filter .component--list .component--list-item {
+  background-color: transparent !important;
+}
+
+:root {
+  --border-color: #006199;
+  --bg-color: rgba(1, 18, 38, 48%);
+}
