@@ -8,6 +8,7 @@
   </BaseMapWidget>
 </template>
 <script lang="ts" setup>
+import { BaseMapWidget } from '@/map/BaseMap'
 import Widget from './Widget/Widget.vue'
 </script>
 <style lang="scss" scoped></style>

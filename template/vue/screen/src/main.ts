@@ -7,9 +7,8 @@ import {
   setupCesium,
   setupZoom,
 } from '@/plugins'
-import { isReady } from '@/hooks/useCesium'
+import { isReady } from '@/map'
 import BaseAppLoading from '@/components/BaseAppLoading/BaseAppLoading.vue'
-import { viewer } from '@/hooks/useCesium/useViewer'
 import App from './App.vue'
 import { setupDirectives } from './directives'
 import { setupRouter } from './router'

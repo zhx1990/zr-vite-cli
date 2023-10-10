@@ -1,7 +1,7 @@
 import { createApp, watch, watchEffect } from 'vue'
 import { setupNaive, setupWarnHandler, setupAssets, setupFastCrud, setupCesium } from '@/plugins'
 import BaseAppLoading from '@/components/BaseAppLoading/BaseAppLoading.vue'
-import { isReady } from '@/hooks/useCesium'
+import { isReady } from '@/map'
 import App from './App.vue'
 import { setupDirectives } from './directives'
 import { setupRouter } from './router'

@@ -5,6 +5,7 @@
 </template>
 <script lang="ts" setup>
 import { useThemeStore } from '@/store'
+import { BaseMapFooter } from '@/map/BaseMap'
 
 const theme = useThemeStore()
 </script>

@@ -7,6 +7,7 @@
 </template>
 <script lang="ts" setup>
 import { useThemeStore } from '@/store'
+import { BaseMapHeader } from '@/map/BaseMap'
 
 const theme = useThemeStore()
 </script>

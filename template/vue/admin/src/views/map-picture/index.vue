@@ -4,7 +4,7 @@
   </BaseMap>
 </template>
 <script lang="ts" setup>
-import { useMap } from '@/hooks/useCesium'
+import { useMap } from '@/map'
 import { onMounted } from 'vue'
 import { LEGEND_TYPE_1, getLegendTypeByValue } from '@/config'
 import Widget from './Widget/Widget.vue'
