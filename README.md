@@ -1,5 +1,8 @@
 # zr-vite-cli
 
+
+#!/usr/bin/env node
+
 > 键创建项目模板的脚手架
 
 ## 安装
