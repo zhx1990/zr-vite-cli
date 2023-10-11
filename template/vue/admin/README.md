@@ -10,6 +10,7 @@
 > [通用Utils模块: https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/web-module-code/code-utils.git](https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/web-module-code/code-utils.git)
 > [通用组件模块: https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/web-module-code/code-components.git](https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/web-module-code/code-components.git)
 > [通用Hooks模块: https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/web-module-code/code-hooks.git](https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/web-module-code/code-hooks.git)
+> [通用Plugins模块: git@codeup.aliyun.com:60d1e8ad077c732675e5fbb8/web-module-code/code-plugins.git](git@codeup.aliyun.com:60d1e8ad077c732675e5fbb8/web-module-code/code-plugins.git)
 
 ## 🎯 路由模块地址
 

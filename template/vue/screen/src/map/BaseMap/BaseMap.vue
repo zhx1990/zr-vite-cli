@@ -17,12 +17,12 @@ import { useMap, useLayer } from '@/map'
 import { PointDataDialog } from '@/components/BaseMark'
 import dayjs from 'dayjs'
 
-const { cesiumRef, setupCesium } = useMap()
+const { cesiumRef, setupMap } = useMap()
 const { elRef, setDomZoom } = useScreenZoom()
 const { createDialog } = useModal()
 
 onMounted(async () => {
-  setupCesium()
+  setupMap()
   setDomZoom()
 })
 </script>

@@ -1,7 +1,6 @@
 import { type Component, ref, provide } from 'vue'
 import * as Cesium from '@cesium/engine'
-import { type MapModeType } from '@/map'
-import { useLayer, useOverlay, useViewer } from './index'
+import { type MapModeType, useLayer, useOverlay, useViewer, useLegend } from './useCesium'
 
 export const MAP_PROVIDE_KEY = 'BASE_MAP'
 export const isReady = ref(false)
@@ -21,8 +20,20 @@ export function useMap() {
     tilesetLayerGroup,
     vectorLayerGroup,
   } = useLayer()
+  const {
+    layerControlData,
+    legendControlData,
+    tileControlData,
+    setLegendControlData,
+    setLayerControlData,
+  } = useLegend()
 
-  const { toggleOverlay } = useOverlay()
+  const { sitePoint, toggleOverlay } = useOverlay()
+
+  /* 比例尺 */
+  const _createDistanceLegend = () => {
+    viewer.value!.distanceLegend.enable = true
+  }
 
   const _mode = (index: number) => {
     viewer.value?.changeBaseLayer(index)
@@ -49,12 +60,23 @@ export function useMap() {
     if (enumType[type]) enumType[type]()
   }
 
+  /* 创建站点 */
+  const createSitePoint = (props: { data: any; component: Component }) => {
+    const layer = new DC.HtmlLayer(LAYER_IDS.SITE_LAYER)
+    props.data.forEach((item) => {
+      const overlay = sitePoint({ data: item, component: props.component })
+      layer.addOverlay(overlay)
+    })
+    htmlLayerGroup.value?.addLayer(layer)
+  }
+
   /* 获取当前坐标 */
   const getCurrentLngLat = () => {
     const position = viewer.value!.scene.camera.positionCartographic
     const { lng, lat } = DC.Transform.transformCartographicToWGS84(position)
     return { lng, lat }
   }
+
   const DISTANCE_BASE = [1, 2, 3, 5]
   const DISTANCE_VALUE = [
     ...DISTANCE_BASE,
@@ -111,6 +133,9 @@ export function useMap() {
     primitiveLayerGroup.value = undefined
     tilesetLayerGroup.value = undefined
     vectorLayerGroup.value = undefined
+    layerControlData.value = []
+    legendControlData.value = []
+    tileControlData.value = []
   }
 
   /* 是否加载完成 */
@@ -124,9 +149,10 @@ export function useMap() {
     })
   }
 
-  const setupMap = () => {
+  const setupCesium = () => {
     setupViewer(cesiumRef)
     setupLayer()
+    _createDistanceLegend()
     viewer.value?.zoomToPosition(new DC.Position(119, 26, 80000))
     _onReady()
   }
@@ -137,6 +163,13 @@ export function useMap() {
 
     // viewer
     viewer,
+
+    // controlData
+    layerControlData,
+    legendControlData,
+    tileControlData,
+    setLegendControlData,
+    setLayerControlData,
 
     // layer
     LAYER_GROUP_IDS,
@@ -151,9 +184,10 @@ export function useMap() {
 
     // overlay
     toggleOverlay,
+    createSitePoint,
 
     // map
-    setupMap,
+    setupCesium,
     setIsReady,
     destroy,
     changeBaseLayer,

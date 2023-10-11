@@ -7,7 +7,7 @@
   </BaseMapWidget>
 </template>
 <script lang="ts" setup>
-import { SliderPanels } from '@/components/BaseMap'
+import { SliderPanels,BaseMapWidget } from '@/map/BaseMap'
 import { shallowRef } from 'vue'
 import Overview from './components/Overview.vue'
 import MonitorSafe from './components/MonitorSafe.vue'

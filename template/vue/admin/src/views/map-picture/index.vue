@@ -4,6 +4,7 @@
   </BaseMap>
 </template>
 <script lang="ts" setup>
+import {BaseMap} from '@/map/BaseMap';
 import { useMap } from '@/map'
 import { onMounted } from 'vue'
 import { LEGEND_TYPE_1, getLegendTypeByValue } from '@/config'
