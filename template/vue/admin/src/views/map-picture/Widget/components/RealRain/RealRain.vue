@@ -1,6 +1,6 @@
 <template>
   <div class="h-full">
-    <BaseSiderHeader title="实时雨情" />
+    <SliderHeader title="实时雨情" />
     <Statistics></Statistics>
     <FsTable
       ref="crudTable"
@@ -12,7 +12,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import BaseSiderHeader from '@/components/BaseMap/components/SliderPanels/SliderHeader.vue'
+import { SliderHeader } from '@/map/BaseMap'
 import { ref } from 'vue'
 import { useCrudBranch } from '@/hooks'
 import Statistics from './Statistics.vue'

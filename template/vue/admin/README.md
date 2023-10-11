@@ -18,7 +18,5 @@
 
 ## 🎯 项目文档
 
-> 原型地址：[https://mjj30c.axshare.com/#id=507sff&p=%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6&g=1](https://mjj30c.axshare.com/#id=507sff&p=%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6&g=1)
-> 仓库地址：[https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/reservoir/web-group/medium-reservoir](https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/reservoir/web-group/medium-reservoir)
 > crud:[http://fast-crud.docmirror.cn/api/crud-options/form.html](http://fast-crud.docmirror.cn/api/crud-options/form.html)
 > NaiveUI: [https://www.naiveui.com/zh-CN/os-theme/docs/community](https://www.naiveui.com/zh-CN/os-theme/docs/community)

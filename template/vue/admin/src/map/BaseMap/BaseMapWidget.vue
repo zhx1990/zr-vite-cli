@@ -2,10 +2,10 @@
   <div class="base-map-widget" :class="offsetTopClass">
     <WidgetLeft>
       <template #left>
-        <!-- <ControlLayer title="图层选择" />
+        <ControlLayer title="图层选择" />
         <ControlTile title="地图选择" />
         <ControlLegend title="图例" />
-        <ControlParams title="地图参数" /> -->
+        <ControlParams title="地图参数" />
         <slot name="left" />
       </template>
     </WidgetLeft>
