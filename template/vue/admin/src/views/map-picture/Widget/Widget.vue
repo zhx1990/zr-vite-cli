@@ -2,17 +2,16 @@
   <BaseMapWidget>
     <template #left> </template>
     <template #right>
-      <SliderPanels :configs="panelData" />
+      <BaseSliderPanels :configs="panelData" />
     </template>
   </BaseMapWidget>
 </template>
 <script lang="ts" setup>
-import { SliderPanels,BaseMapWidget } from '@/map/BaseMap'
 import { shallowRef } from 'vue'
+import { BaseMapWidget } from '@/map/BaseMap'
 import Overview from './components/Overview.vue'
 import MonitorSafe from './components/MonitorSafe.vue'
 import RealWater from './components/RealWater/RealWater.vue'
-import RealRain from './components/RealRain/RealRain.vue'
 
 const panelData = [
   {
@@ -32,12 +31,6 @@ const panelData = [
     label: '实时水情',
     value: 'RealWater',
     component: shallowRef(RealWater),
-  },
-  {
-    icon: 'reservoir-quyongshuihu',
-    label: '实时雨情',
-    value: 'RealRain',
-    component: shallowRef(RealRain),
   },
 ]
 </script>
