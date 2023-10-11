@@ -15,6 +15,11 @@
 
 > [通用Utils模块: https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/screen-module-code/code-utils.git](https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/screen-module-code/code-utils.git)
 
+> [通用Plugins模块: https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/screen-module-code/code-plugins.git](https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/screen-module-code/code-plugins.git)
+
+
+## 🎯 路由模块地址
+
 
 
 ## 大屏项目
