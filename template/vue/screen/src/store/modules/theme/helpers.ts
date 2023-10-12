@@ -7,11 +7,11 @@ import { localStg, addColorAlpha, getColorPalette } from '@/utils'
 export function initThemeSettings() {
   const isProd = import.meta.env.PROD
   // 生产环境才缓存主题配置，本地开发实时调整配置更改配置的json
-  const storageSettings = localStg.get('themeSettings')
+  // const storageSettings = localStg.get('themeSettings')
 
-  if (isProd && storageSettings) {
-    return storageSettings
-  }
+  // if (isProd && storageSettings) {
+  //   return storageSettings
+  // }
 
   const themeColor = localStg.get('themeColor') || themeSetting.themeColor
   const info = themeSetting.isCustomizeInfoColor
