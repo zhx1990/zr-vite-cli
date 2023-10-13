@@ -1,4 +1,4 @@
-# 中瑞后台管理系统
+# 中锐后台管理系统
 
 ## 🎯 运行环境
 >
@@ -14,7 +14,7 @@
 
 ## 🎯 路由模块地址
 
-> [设备管理模块: git@codeup.aliyun.com:60d1e8ad077c732675e5fbb8/web-module-code/router-device.git](git@codeup.aliyun.com:60d1e8ad077c732675e5fbb8/web-module-code/router-device.git)
+> [设备管理模块:https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/admin-module-router/router-device-management.git](https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/admin-module-router/router-device-management.git)
 
 ## 🎯 项目文档
 

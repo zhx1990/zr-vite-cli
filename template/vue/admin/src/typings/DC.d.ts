@@ -1101,6 +1101,11 @@ declare namespace DC {
 
     position: String | Array<number> | Common.Recordable | Position
   }
+  export class Rect extends Overlay {
+    constructor(position: String | Array<number> | Common.Recordable | Position)
+
+    position: String | Array<number> | Common.Recordable | Position
+  }
 
   export class Polygon extends Overlay {
     constructor(positions: String | Array<String | Array<number> | Common.Recordable | Position>)
