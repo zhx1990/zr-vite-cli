@@ -2,24 +2,23 @@ import { localStg } from '@/utils'
 
 /** 获取token */
 export function getToken() {
-  return localStg.get('token') || ''
+  return localStg.get('tokenInfo') || ''
 }
 
 /** 获取用户信息 */
 export function getUserInfo() {
-  const emptyInfo: Auth.UserInfo = {
-    userId: '',
-    userName: '',
+  const emptyInfo: Partial<Auth.UserInfo> = {
+    id: '',
+    name: '',
     userRole: 'user',
   }
-  const userInfo: Auth.UserInfo = localStg.get('userInfo') || emptyInfo
+  const userInfo: Auth.UserInfo = localStg.get('userInfo') || (emptyInfo as Auth.UserInfo)
 
   return userInfo
 }
 
 /** 去除用户相关缓存 */
 export function clearAuthStorage() {
-  localStg.remove('token')
-  localStg.remove('refreshToken')
+  localStg.remove('tokenInfo')
   localStg.remove('userInfo')
 }

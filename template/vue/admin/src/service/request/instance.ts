@@ -50,8 +50,9 @@ export default class CustomAxiosInstance {
           const contentType = handleConfig.headers['Content-Type'] as UnionKey.ContentType
           handleConfig.data = await transformRequestData(handleConfig.data, contentType)
           // 设置token
-          const tokenName = localStg.get('tokenName') || ''
-          const tokenValue = localStg.get('tokenValue') || ''
+          const tokenInfo = localStg.get('tokenInfo')
+          const tokenName = tokenInfo?.tokenName || ''
+          const tokenValue = tokenInfo?.tokenValue || ''
           // handleConfig.headers.Authorization = localStg.get('tokenValue') || ''
           if (tokenName && tokenValue) handleConfig.headers[tokenName] = tokenValue
         }

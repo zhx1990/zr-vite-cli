@@ -9,7 +9,11 @@ declare namespace StorageInterface {
     /** 主题颜色 */
     themeColor: string
     /** 用户token */
-    token: string
+    tokenInfo: {
+      tokenName: string
+      tokenTimeout: string
+      tokenValue: string
+    }
     /** 用户刷新token */
     refreshToken: string
     /** 用户信息 */

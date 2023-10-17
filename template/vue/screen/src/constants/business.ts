@@ -1,6 +1,7 @@
 import { transformObjectToOption } from './_shared'
 
 export const loginModuleLabels: Record<UnionKey.LoginModule, string> = {
+  token: '单点登录',
   'pwd-login': '账密登录',
   'code-login': '手机验证码登录',
   register: '注册',

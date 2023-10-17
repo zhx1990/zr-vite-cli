@@ -1,5 +1,6 @@
 <template>
-  <div class="relative flex-center wh-full" :style="{ backgroundColor: bgColor }">
+  <LoginByToken v-if="props.module === 'token'" />
+  <div v-else class="relative flex-center wh-full" :style="{ backgroundColor: bgColor }">
     <BaseDarkModeSwitch
       :dark="theme.darkMode"
       class="absolute left-48px top-24px z-3 text-20px"
@@ -33,7 +34,7 @@ import { loginModuleLabels } from '@/constants'
 import { useThemeStore } from '@/store'
 import { useAppInfo } from '@/hooks'
 import { getColorPalette, mixColor } from '@/utils'
-import { LoginBg, PwdLogin } from './components'
+import { LoginBg, PwdLogin, LoginByToken } from './components'
 
 interface Props {
   /** 登录模块分类 */

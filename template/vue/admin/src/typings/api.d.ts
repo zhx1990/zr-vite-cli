@@ -10,11 +10,12 @@ declare namespace ApiSite {
     tenantId?: number
     validCodeNo?: string
   }
-  interface PwdLoginRes {
+  interface LoginRes {
     tokenName: string
     tokenTimeout: number
     tokenValue: string
   }
+  type BuildServerUrl = string
 }
 
 declare namespace ApiTask {
