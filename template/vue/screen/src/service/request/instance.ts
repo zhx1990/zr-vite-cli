@@ -1,15 +1,15 @@
 import axios from 'axios'
 import type { AxiosResponse, AxiosError, AxiosInstance, AxiosRequestConfig } from 'axios'
+import { useRouterPush } from '@/hooks'
+import { localStg } from '@/utils'
+import { useAuthStore } from '@/store'
 import {
-  localStg,
   handleAxiosError,
   handleBackendError,
   handleResponseError,
   handleServiceResult,
   transformRequestData,
-} from '@/utils'
-import { REFRESH_TOKEN_CODE } from '~/src/config'
-import { handleRefreshToken } from './helpers'
+} from '../utils'
 
 /**
  * 封装axios请求类
@@ -27,10 +27,12 @@ export default class CustomAxiosInstance {
   constructor(
     axiosConfig: AxiosRequestConfig,
     backendConfig: Service.BackendResultConfig = {
-      codeKey: 'code',
+      codeKey: 'errorCode',
       dataKey: 'data',
-      msgKey: 'message',
-      successCode: 200,
+      msgKey: 'errorMessage',
+      showType: 0,
+      host: '',
+      success: true,
     }
   ) {
     this.backendConfig = backendConfig
@@ -66,26 +68,22 @@ export default class CustomAxiosInstance {
         const { status } = response
         if (status === 200 || status < 300 || status === 304) {
           const backend = response.data
-          const { codeKey, dataKey, successCode } = this.backendConfig
           // 请求成功
-          if (backend[codeKey] === successCode) {
-            return handleServiceResult(null, backend[dataKey])
+          if (backend.success) {
+            return handleServiceResult(null, backend)
           }
-
-          // token失效, 刷新token
-          if (REFRESH_TOKEN_CODE.includes(backend[codeKey])) {
-            const config = await handleRefreshToken(response.config)
-            if (config) {
-              return this.instance.request(config)
-            }
+          if (backend?.errorCode === 'A0200') {
+            const auth = useAuthStore()
+            auth.resetAuthStore()
+            const { toLogin } = useRouterPush(false)
+            toLogin()
           }
-
           const error = handleBackendError(backend, this.backendConfig)
-          return handleServiceResult(error, null)
+          return handleServiceResult(error, backend)
         }
         const error = handleResponseError(response)
         return handleServiceResult(error, null)
-      }) as (response: AxiosResponse<any, any>) => Promise<AxiosResponse<any, any>>,
+      }) as any,
       (axiosError: AxiosError) => {
         const error = handleAxiosError(axiosError)
         return handleServiceResult(error, null)

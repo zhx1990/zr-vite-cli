@@ -70,7 +70,14 @@ interface ImportMetaEnv {
   readonly VITE_ROUTE_PLUGIN?: 'Y' | 'N'
   /** 是否是部署的vercel */
   readonly VITE_VERCEL?: 'Y' | 'N'
-  /** 日志级别 */
+   /* 登录模式 */
+   readonly VITE_LOGIN_TYPE:
+   | 'pwd-login'
+   | 'code-login'
+   | 'register'
+   | 'reset-pwd'
+   | 'bind-wechat'
+   | 'token'
 }
 
 interface ImportMeta {

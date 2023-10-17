@@ -18,7 +18,7 @@ export const constantRoutes: AuthRoute.Route[] = [
     path: '/login',
     component: 'self',
     props: (route) => {
-      const moduleType = (route.params.module as UnionKey.LoginModule) || 'token'
+      const moduleType = (route.params.module as UnionKey.LoginModule) || import.meta.env.VITE_LOGIN_TYPE
       return {
         module: moduleType,
       }

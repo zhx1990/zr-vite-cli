@@ -129,6 +129,7 @@ export function createHookRequest(
     function handleRequestResult(response: any) {
       const res = response as Service.RequestResult<T>
       data.value = res.data
+      console.log('res===> :>> ', res)
       error.value = res.error
       endLoading()
       setNetwork(window.navigator.onLine)

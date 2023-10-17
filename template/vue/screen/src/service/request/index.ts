@@ -10,3 +10,4 @@ export const request = createRequest({
 })
 
 export const mockRequest = createRequest({ baseURL: '/mock' })
+export * from '../utils'

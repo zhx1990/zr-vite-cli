@@ -50,7 +50,6 @@ export const CUSTOM_ERROR_STATUS = (showType: number | string, msg: string) => {
     9: '跳转',
     ...ERROR_STATUS,
   }
-  console.log('showType :>> ', showType)
   if (defType[showType]) {
     defType[showType]()
   }

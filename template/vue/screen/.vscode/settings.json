@@ -1,0 +1,50 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.fixAll.markdownlint": true
+  },
+  "stylelint.validate": ["css", "scss", "less", "vue"],
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ts]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "vue.features.codeActions.enable": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".editorconfig,.env*,.eslint*,package*,.prettier*,.stylelint*,commitlint*,pnpm*,ts*,yarn*,.git*,*html,*ts,*js"
+  },
+  "search.exclude": {
+    "**/public": true,
+    "**/.vitepress": true,
+    "**/docs": true,
+    "**/node_modules": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.idea": true,
+    "**/.svn": true,
+    "**/.vscode": true,
+    "**/dist": true,
+    "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true,
+    "**/package.json": true
+  },
+  "i18n-ally.localesPaths": ["src/locales", "src/locales/lang"],
+  "cSpell.words": ["tileset"]
+}

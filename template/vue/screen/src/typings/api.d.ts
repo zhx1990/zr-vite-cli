@@ -1,6 +1,90 @@
-// 后端接口返回的数据类型
+// 接口数据类型
 
-/** 后端返回的用户权益相关类型 */
+declare namespace ApiSite {
+  // 密码登录
+  interface PwdLoginParams {
+    captchaCode?: string
+    device: string
+    identity: string
+    password: string
+    tenantId?: number
+    validCodeNo?: string
+  }
+  interface LoginRes {
+    tokenName: string
+    tokenTimeout: number
+    tokenValue: string
+  }
+  type BuildServerUrl = string
+}
+
+declare namespace ApiTask {
+  interface TaskPage {
+    countId: string
+    current: number
+    maxLimit: number
+    optimizeCountSql: boolean
+    orders: Array<{
+      asc: boolean
+      column: string
+    }>
+    pages: number
+    records: Array<TaskPageRecord>
+    searchCount: boolean
+    size: number
+    total: number
+  }
+  interface TaskPageRecord {
+    processList: any[]
+    count: number
+    createdBy: number
+    createdTime: string
+    createdUser: {
+      id: number
+      name: string
+      superFlag: boolean
+      tenantId: number
+    }
+    difference: number
+    express: string
+    id: number
+    itemList: Array<{
+      description: string
+      itemType: string
+      minuteRate: number
+    }>
+    stcdList: Array<{
+      drownType: number
+      lgtd: number
+      lttd: number
+      stcd: string
+      stnm: string
+      sttp: string
+    }>
+    taskField: string
+    taskName: string
+    updatedBy: number
+    updatedTime: string
+  }
+}
+
+declare namespace ApiAdminStbprp {
+  interface getSttpList {
+    name: string
+    sttp: string
+  }
+  interface stbprpOption {
+    drownType: number
+    lgtd: number
+    lttd: number
+    stcd: string
+    stnm: string
+    sttp: string
+  }
+}
+
+declare namespace ApiMine {}
+
 declare namespace ApiAuth {
   /** 返回的token和刷新token */
   interface Token {

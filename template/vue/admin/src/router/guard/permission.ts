@@ -22,7 +22,7 @@ export async function createPermissionGuard(
   }
 
   const auth = useAuthStore()
-  const isLogin = Boolean(localStg.get('tokenValue'))
+  const isLogin = Boolean(localStg.get('tokenInfo'))
   const permissions = to.meta.permissions || []
   const needLogin = Boolean(to.meta?.requiresAuth) || Boolean(permissions.length)
   // FIXME: 写死了权限auth.userInfo.userRole!

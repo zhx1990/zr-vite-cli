@@ -10,10 +10,39 @@ declare namespace Auth {
 
   /** 用户信息 */
   interface UserInfo {
-    /** 用户id */
-    userId: string
-    /** 用户名 */
-    userName: string
+    avatar: number
+    avatarInfo: {
+      domainUrl: string
+      fileName: string
+      filePathName: string
+      fileSizeKb: number
+      fileSuffix: string
+      id: number
+      originName: string
+    }
+    birthday: string
+    createdBy: number
+    createdTime: string
+    email: string
+    emailVerified: number
+    externalId: string
+    gender: number
+    id: number | string
+    lastLoginTime: string
+    loginCount: number
+    name: string
+    nickname: string
+    passwordChangeTime: string
+    phone: string
+    phoneVerified: number
+    status: number
+    statusChangeTime: string
+    superFlag: boolean
+    tenantId: number
+    updatedBy: number
+    updatedTime: string
+    userSourceType: number
+    username: string
     /** 用户角色类型 */
     userRole: RoleType
   }

@@ -43,7 +43,6 @@ export const useAuthStore = defineStore('auth-store', {
      */
     async loginStatus() {
       const ticket = getQueryByName('ticket')
-      console.log('ticket :>> ', ticket)
       if (ticket) {
         this.loginByTicket(ticket)
       } else {

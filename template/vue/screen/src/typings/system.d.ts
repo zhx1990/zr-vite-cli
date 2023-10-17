@@ -16,6 +16,10 @@ declare namespace Service {
     code: string | number
     /** 错误信息 */
     msg: string
+    /** 后端返回显示类型 */
+    showType?: number
+    success?: boolean
+    host?: string
   }
 
   /** 后端接口返回的数据结构配置 */
@@ -26,16 +30,22 @@ declare namespace Service {
     dataKey: string
     /** 表示后端消息的属性字段 */
     msgKey: string
+    /** 表示后端返回的host */
+    host: string
+    /** 表示后端返回的显示类型属性字段 */
+    showType: number
     /** 后端业务上定义的成功请求的状态 */
-    successCode: number | string
+    success: boolean
   }
 
   /** 自定义的请求成功结果 */
   interface SuccessResult<T = any> {
-    /** 请求错误 */
-    error: null
     /** 请求数据 */
     data: T
+    showType: number
+    success: boolean
+    host: string
+    error: null
   }
 
   /** 自定义的请求失败结果 */
@@ -44,6 +54,9 @@ declare namespace Service {
     error: RequestError
     /** 请求数据 */
     data: null
+    host: string
+    showType: number
+    success: boolean
   }
 
   /** 自定义的请求结果 */

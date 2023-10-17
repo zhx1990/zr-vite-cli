@@ -39,6 +39,22 @@ export const ERROR_STATUS = {
   [DEFAULT_REQUEST_ERROR_CODE]: DEFAULT_REQUEST_ERROR_MSG,
 }
 
+/** 由后端自定义错误状态码 */
+
+export const CUSTOM_ERROR_STATUS = (showType: number | string, msg: string) => {
+  const defType = {
+    // 0: '',
+    1: () => window.$message?.warning(msg, { duration: ERROR_MSG_DURATION }),
+    2: () => window.$message?.error(msg, { duration: ERROR_MSG_DURATION }),
+    4: () => window.$message?.info(msg, { duration: ERROR_MSG_DURATION }),
+    9: '跳转',
+    ...ERROR_STATUS,
+  }
+  if (defType[showType]) {
+    defType[showType]()
+  }
+}
+
 /** 不弹出错误信息的code */
 export const NO_ERROR_MSG_CODE: (string | number)[] = []
 

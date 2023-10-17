@@ -22,7 +22,7 @@ export async function createPermissionGuard(
   }
 
   const auth = useAuthStore()
-  const isLogin = Boolean(localStg.get('token'))
+  const isLogin = Boolean(localStg.get('tokenInfo'))
   const permissions = to.meta.permissions || []
   const needLogin = Boolean(to.meta?.requiresAuth) || Boolean(permissions.length)
   const hasPermission = !permissions.length || permissions.includes(auth.userInfo.userRole)
