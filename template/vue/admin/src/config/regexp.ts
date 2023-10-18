@@ -9,6 +9,9 @@ export const REGEXP_EMAIL = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
 export const REGEXP_PWD =
   /^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)(?!([^(0-9a-zA-Z)]|[()])+$)(?!^.*[\u4E00-\u9FA5].*$)([^(0-9a-zA-Z)]|[()]|[a-z]|[A-Z]|[0-9]){6,18}$/
 
+/* 基本密码规则 */
+export const REGEXP_BASE_PWD = /^[0-9a-zA-Z]{5,18}$/
+
 /** 6位数字验证码正则 */
 export const REGEXP_CODE_SIX = /^\d{6}$/
 
