@@ -1,5 +1,4 @@
 export * from './auth'
 export * from './site'
 export * from './mine'
-
-export * from './adminFile'
+export * from './file'
