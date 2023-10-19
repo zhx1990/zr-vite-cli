@@ -1,5 +1,5 @@
 import { createApp, watch, watchEffect } from 'vue'
-import { setupNaive, setupWarnHandler, setupAssets, setupFastCrud, setupCesium } from '@/plugins'
+import { setupNaive, setupWarnHandler, setupAssets, setupFastCrud, setupCesium, setupCustomFsType } from '@/plugins'
 import BaseAppLoading from '@/components/BaseAppLoading/BaseAppLoading.vue'
 import { isReady } from '@/map'
 import App from './App.vue'
@@ -30,6 +30,8 @@ async function setupApp() {
   setupNaive(app)
 
   setupFastCrud(app)
+
+  setupCustomFsType()
 
   setupWarnHandler(app)
 

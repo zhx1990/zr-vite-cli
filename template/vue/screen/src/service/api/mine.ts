@@ -1,11 +1,11 @@
 import { request, adapter } from '@/service/request'
 
 const Source = {
-  getUser: '/dx-forecast/web/mine/getUser',
+  mineUserInfo: '/sys/admin/mine/userInfo',
 }
 // 获取用户
-export const getUser = async () => {
-  const data = await request.get<Auth.UserInfo>(Source.getUser)
+export const mineUserInfo = async () => {
+  const data = await request.get<Auth.UserInfo>(Source.mineUserInfo)
   return adapter(adapterOfMineUserInfo, data)
 }
 

@@ -11,7 +11,7 @@ declare namespace StorageInterface {
     /** 用户token */
     tokenInfo: {
       tokenName: string
-      tokenTimeout: string
+      tokenTimeout: number
       tokenValue: string
     }
     /** 用户信息 */

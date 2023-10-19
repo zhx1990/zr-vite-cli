@@ -4,6 +4,7 @@ import {
   setupWarnHandler,
   setupAssets,
   setupFastCrud,
+  setupCustomFsType,
   setupCesium,
   setupZoom,
 } from '@/plugins'
@@ -40,6 +41,8 @@ async function setupApp() {
   setupNaive(app)
 
   setupFastCrud(app)
+
+  setupCustomFsType()
 
   // setupWarnHandler(app)
 
