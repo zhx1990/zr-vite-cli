@@ -50,6 +50,10 @@ declare namespace AuthRoute {
     icon?: string
     /** 使用本地svg作为的菜单和面包屑对应的图标(assets/svg-icon文件夹的的svg文件名) */
     localIcon?: string
+    /* 图标图片 */
+    imgPath?: string
+    /* 鼠标点击时的图片 */
+    imgActivePath?: string
     /** 是否在菜单中隐藏(一些列表、表格的详情页面需要通过参数跳转，所以不能显示在菜单中) */
     hide?: boolean
     /** 外链链接 */

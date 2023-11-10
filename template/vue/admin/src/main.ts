@@ -1,7 +1,13 @@
 import { createApp, watch, watchEffect } from 'vue'
-import { setupNaive, setupWarnHandler, setupAssets, setupFastCrud, setupCesium, setupCustomFsType } from '@/plugins'
+import {
+  setupNaive,
+  setupWarnHandler,
+  setupAssets,
+  setupFastCrud,
+  setupCesium,
+  setupCustomFsType,
+} from '@/plugins'
 import BaseAppLoading from '@/components/BaseAppLoading/BaseAppLoading.vue'
-import { isReady } from '@/map'
 import App from './App.vue'
 import { setupDirectives } from './directives'
 import { setupRouter } from './router'
@@ -36,18 +42,9 @@ async function setupApp() {
   setupWarnHandler(app)
 
   setupCesium()
+  appLoading.unmount()
   // mount app
   app.mount('#app')
-
-  const unwatch = watch(
-    () => isReady.value,
-    (value) => {
-      if (value) {
-        appLoading.unmount()
-        unwatch()
-      }
-    }
-  )
 }
 
 setupApp()

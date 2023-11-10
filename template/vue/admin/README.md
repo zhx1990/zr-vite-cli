@@ -15,9 +15,9 @@
 
 ## 🎯 路由模块地址
 >
+>系统内置模块: <https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/admin-module-router/router-_builtin.git>
 >设备管理模块: <https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/admin-module-router/router-device-management.git>
 >系统管理模块：<https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/admin-module-router/router-system-management.git>
->系统内置模块: <https://codeup.aliyun.com/60d1e8ad077c732675e5fbb8/admin-module-router/router-_builtin.git>
 
 ## 🎯 插件库
 >

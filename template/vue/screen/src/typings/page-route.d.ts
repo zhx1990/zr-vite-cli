@@ -22,7 +22,8 @@ declare namespace PageRoute {
     | 'constant-page'
     | 'login'
     | 'not-found'
-    | 'hydrology-picture';
+    | 'scheduling'
+    | 'simulation';
 
   /**
    * last degree route key, which has the page file
@@ -36,6 +37,7 @@ declare namespace PageRoute {
     | 'constant-page'
     | 'login'
     | 'not-found'
-    | 'hydrology-picture'
+    | 'scheduling'
+    | 'simulation'
   >;
 }

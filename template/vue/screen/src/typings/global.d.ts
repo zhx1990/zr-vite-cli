@@ -1,9 +1,18 @@
+/*
+ * @Author: chenr 526963089@qq.com
+ * @Date: 2023-10-27 11:03:35
+ * @LastEditors: chenr 526963089@qq.com
+ * @LastEditTime: 2023-11-09 16:07:33
+ * @FilePath: /dx-screen/src/typings/global.d.ts
+ * @Description:
+ */
 interface Window {
   CESIUM_BASE_URL: string
   $loadingBar?: import('naive-ui').LoadingBarProviderInst
   $dialog?: import('naive-ui').DialogProviderInst
   $message?: import('naive-ui').MessageProviderInst
   $notification?: import('naive-ui').NotificationProviderInst
+  JSPlugin: any
 }
 
 interface ViewTransition {

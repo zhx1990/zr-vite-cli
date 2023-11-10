@@ -1,6 +1,6 @@
 {
   "name": "zr-vite-cli",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "author": "HaoXian",
   "description": "",
   "main": "./dist/index.cjs",

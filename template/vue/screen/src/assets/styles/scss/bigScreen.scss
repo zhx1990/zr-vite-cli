@@ -139,17 +139,51 @@ $border-color: #006199;
   }
 
   .div-icon {
-    pointer-events: none;
     background-color: transparent;
   }
 
   .viewer-widgets {
     position: relative;
+    z-index: 10;
+
+    .widget.location-bar {
+      bottom: 80px;
+      left: 460px;
+      background: transparent;
+
+      .mouse-bar {
+        flex-direction: column;
+      }
+
+      .camera-bar,
+      .ms-bar,
+      .fps-bar {
+        display: none;
+      }
+    }
 
     .widget.distance-legend {
-      bottom: 4vh;
-      left: 25vw;
+      bottom: 50px;
+      left: 450px;
       z-index: 10;
+    }
+
+    .widget.compass {
+      top: -350px;
+      right: 470px;
+      transition: all 0.3s ease-in-out;
+
+      .gyro {
+        svg {
+          width: 17px;
+          height: 17px;
+        }
+      }
+    }
+
+    .compass-offset {
+      top: 120 !important;
+      right: 60px !important;
     }
   }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 60" style="enable-background:new 0 0 74 60;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#icon_home_1_);}
+</style>
+<linearGradient id="icon_home_1_" gradientUnits="userSpaceOnUse" x1="3060.0601" y1="-80.938" x2="3060.0601" y2="-20.938" gradientTransform="matrix(1 0 0 -1 -3023.0601 -20.938)">
+	<stop  offset="0" style="stop-color:#3C95E7"/>
+	<stop  offset="1" style="stop-color:#CBE2FF"/>
+</linearGradient>
+<path id="icon_home" class="st0" d="M72.4,27.7l-10-8.3V4.8c0-2.5-2.1-4.6-4.6-4.6c-2.5,0-4.6,2-4.6,4.6l0,0v7L40.3,1.1
+	c-0.9-0.8-2.1-1.1-3.2-1h-0.1c-1.2-0.1-2.3,0.3-3.2,1L1.6,27.7c-1.9,1.6-2.1,4.5-0.5,6.4c1.6,1.9,4.5,2.1,6.4,0.5L37,10.2l29.5,24.5
+	c2,1.6,4.8,1.3,6.5-0.6C74.5,32.1,74.3,29.3,72.4,27.7z M9.9,36.5v18.3c0,2.9,2.4,5.2,5.2,5.2c0,0,0,0,0,0h14.4V41.8H44V60h14.4
+	c2.9,0,5.2-2.3,5.2-5.2l0,0V36L36.8,14.5L9.9,36.5z"/>
+</svg>

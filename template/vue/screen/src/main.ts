@@ -1,5 +1,5 @@
 import { createApp, watch } from 'vue'
-import { isReady } from '@/map'
+import { isReady } from '~/src/visualization/map'
 import {
   setupNaive,
   setupWarnHandler,
@@ -10,18 +10,29 @@ import {
   setupAmfeFlexible,
 } from '@/plugins'
 import BaseAppLoading from '@/components/BaseAppLoading/BaseAppLoading.vue'
+import { localStg, getRgbOfColor } from '@/utils'
+import themeSettings from '@/settings/theme.json'
 import App from './App.vue'
 import { setupDirectives } from './directives'
 import { setupRouter } from './router'
 import { setupStore } from './store'
 import { setupI18n } from './locales'
 
+function addThemeColorCssVars() {
+  const defaultColor = themeSettings.themeColor
+  const themeColor = localStg.get('themeColor') || defaultColor
+
+  const { r, g, b } = getRgbOfColor(themeColor)
+
+  const cssVars = `--primary-color: ${r},${g},${b}`
+  document.documentElement.style.cssText = cssVars
+}
+
 async function setupApp() {
   setupAssets()
   // app loading
-  const appLoading = createApp(BaseAppLoading)
 
-  appLoading.mount('#appLoading')
+  addThemeColorCssVars()
 
   const app = createApp(App)
 
@@ -46,20 +57,9 @@ async function setupApp() {
 
   setupCesium()
 
-  // mount app
-  app.mount('#app')
-
   setupAmfeFlexible()
 
-  const unwatch = watch(
-    () => isReady.value,
-    (value) => {
-      if (value) {
-        appLoading.unmount()
-        unwatch()
-      }
-    }
-  )
+  app.mount('#app')
 }
 
 setupApp()

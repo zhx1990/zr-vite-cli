@@ -33,6 +33,7 @@ export const useThemeStore = defineStore('theme-store', {
     },
     /** 缓存主题配置 */
     cacheThemeSettings() {
+      // TODO: 大屏不需要主题模式
       // const isProd = import.meta.env.PROD
       // if (isProd) {
       //   localStg.set('themeSettings', this.$state)

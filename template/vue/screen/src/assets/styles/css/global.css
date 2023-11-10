@@ -17,3 +17,7 @@ body,
   --border-color: #006199;
   --bg-color: rgba(1, 18, 38, 48%);
 }
+
+.tp-dfwv {
+  z-index: 99;
+}

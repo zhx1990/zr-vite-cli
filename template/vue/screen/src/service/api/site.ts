@@ -1,12 +1,12 @@
 import { request, resHandle } from '@/service/request'
 
 const Source = {
-  siteConfig: '/cma/site/config',
-  siteTicketLogin: '/dx-forecast/web/site/ticketLogin',
-  siteBuildServerUrl: '/dx-forecast/web/site/buildServerUrl',
-  sitePwdLogin: '/sys/admin/site/pwdLogin',
-  siteRedirect: '/sys/admin/site/redirect',
-  siteLogout: '/sys/admin/site/logout',
+  siteConfig: '/dx-gis/site/config',
+  siteTicketLogin: '/dx-gis/web/site/ticketLogin',
+  siteBuildServerUrl: '/dx-gis/web/site/buildServerUrl',
+  sitePwdLogin: '/dx-gis/web/site/pwdLogin',
+  siteRedirect: '/dx-gis/web/site/redirect',
+  siteLogout: '/dx-gis/web/site/logout',
 }
 
 // 密码登录
