@@ -48,6 +48,7 @@
     "socket.io-client": "^4.7.1",
     "supercluster": "^8.0.1",
     "swiper": "^9.4.1",
+    "three": "^0.157.0",
     "tweakpane": "^4.0.0",
     "typescript": "5.0",
     "ua-parser-js": "^1.0.35",
@@ -63,6 +64,7 @@
     "xgplayer": "^3.0.5"
   },
   "devDependencies": {
+    "@types/three": "^0.157.2",
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
     "@iconify/json": "^2.2.84",

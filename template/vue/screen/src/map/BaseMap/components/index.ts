@@ -1,8 +1,0 @@
-export { default as WidgetLeft } from './WidgetLeft.vue'
-export { default as WidgetContent } from './WidgetContent.vue'
-export { default as WidgetRight } from './WidgetRight.vue'
-export { default as HeaderWeather } from './HeaderWeather.vue'
-export { default as HeaderTime } from './HeaderTime.vue'
-export { default as FooterMenuButton } from './FooterMenuButton.vue'
-export { default as FooterSiteButton } from './FooterSiteButton.vue'
-export { default as InputSearch } from './InputSearch.vue'
