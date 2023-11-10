@@ -1,14 +1,14 @@
 <template>
-  <BaseMapWidget isOffsetTop>
+  <LayoutWidget isOffsetTop>
     <template #left> </template>
     <template #content>
       <Widget />
     </template>
     <template #right> </template>
-  </BaseMapWidget>
+  </LayoutWidget>
 </template>
 <script lang="ts" setup>
-import { BaseMapWidget } from '@/map/BaseMap'
+import { LayoutWidget } from '@/layouts'
 import Widget from './Widget/Widget.vue'
 </script>
 <style lang="scss" scoped></style>
