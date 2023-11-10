@@ -3,10 +3,10 @@
     <!-- <BaseSystemLogo class="text-32px text-primary" /> -->
     <h2
       v-show="showTitle"
-      class="pl-8px text-16px font-bold text-primary transition duration-300 ease-in-out"
+      class="pl-8px text-16px leading-30px font-bold text-primary transition duration-300 ease-in-out"
     >
       <!-- {{ t('message.system.title') }} -->
-      {{ title }}
+      <img src="/public/image/logo.png" class="inline-block w-30px h-30px" alt="logo" /> {{ title }}
     </h2>
   </RouterLink>
 </template>

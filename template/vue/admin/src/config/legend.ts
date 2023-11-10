@@ -13,12 +13,12 @@ export const LEGEND_TYPE_1 = [
 export const LEGEND_TYPE_2 = [
   {
     value: '2D-IMG',
-    label: '矢量',
+    label: '卫星',
     thumb: '/image/product.png',
   },
   {
     value: '2D-VEC',
-    label: '卫星',
+    label: '矢量',
     thumb: '/image/product.png',
   },
   {
@@ -30,6 +30,24 @@ export const LEGEND_TYPE_2 = [
     value: '3D',
     label: '三维',
     thumb: '/image/product.png',
+  },
+]
+export const LEGEND_TYPE_3 = [
+  {
+    value: 1,
+    label: '水库大坝',
+  },
+  {
+    value: 2,
+    label: '水闸',
+  },
+  {
+    value: 3,
+    label: '水文监测站',
+  },
+  {
+    value: 4,
+    label: '水事影像监测站',
   },
 ]
 

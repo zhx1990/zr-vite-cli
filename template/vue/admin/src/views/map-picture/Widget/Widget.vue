@@ -1,6 +1,11 @@
 <template>
   <BaseMapWidget>
-    <template #left> </template>
+    <template #left>
+      <ControlLayer title="图层选择" />
+      <ControlTile title="地图选择" />
+      <ControlLegend title="图例" />
+      <ControlParams title="地图参数" />
+    </template>
     <template #right>
       <BaseSliderPanels :configs="panelData" />
     </template>
@@ -8,7 +13,13 @@
 </template>
 <script lang="ts" setup>
 import { shallowRef } from 'vue'
-import { BaseMapWidget } from '@/map/BaseMap'
+import {
+  BaseMapWidget,
+  ControlTile,
+  ControlLegend,
+  ControlLayer,
+  ControlParams,
+} from '@/visualization/map/BaseMap'
 import Overview from './components/Overview.vue'
 import MonitorSafe from './components/MonitorSafe.vue'
 import RealWater from './components/RealWater/RealWater.vue'

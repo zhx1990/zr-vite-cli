@@ -11,6 +11,7 @@
 import type { DropdownOption } from 'naive-ui'
 import { useAuthStore, useThemeStore } from '@/store'
 import { useIconRender } from '@/hooks'
+import { siteLogout } from '@/service/api'
 
 defineOptions({ name: 'UserAvatar' })
 
@@ -45,8 +46,11 @@ function handleDropdown(optionKey: string) {
       content: '您确定要退出登录吗？',
       positiveText: '确定',
       negativeText: '取消',
-      onPositiveClick: () => {
-        auth.resetAuthStore()
+      onPositiveClick: async () => {
+        const res = await siteLogout('web')
+        if (res) {
+          auth.resetAuthStore()
+        }
       },
     })
   }

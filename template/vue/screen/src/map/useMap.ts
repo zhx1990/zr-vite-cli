@@ -124,11 +124,57 @@ export function useMap() {
     })
   }
 
+  const test = () => {
+    const silhouetteBlue = Cesium.PostProcessStageLibrary.createEdgeDetectionStage()
+    silhouetteBlue.uniforms.color = Cesium.Color.BLUE
+    silhouetteBlue.uniforms.length = 0.01
+    silhouetteBlue.selected = []
+
+    const silhouetteGreen = Cesium.PostProcessStageLibrary.createEdgeDetectionStage()
+    silhouetteGreen.uniforms.color = Cesium.Color.LIME
+    silhouetteGreen.uniforms.length = 0.01
+    silhouetteGreen.selected = []
+
+    viewer.value?.scene.postProcessStages.add(
+      Cesium.PostProcessStageLibrary.createSilhouetteStage([silhouetteBlue, silhouetteGreen])
+    )
+    // const overlay = new DC.Tileset('/bim/tileset.json')
+    // overlay.setHeight(500)
+    // const layer = new DC.TilesetLayer('test')
+    // overlay.on(DC.MouseEventType.CLICK, (e) => {
+    //   console.log('e :>> ', e)
+    //   silhouetteBlue.selected = [e.feature]
+    // })
+
+    const pos = new DC.Position(119, 26, 1000, 0, -90)
+    // const overlay = new DC.Model(pos, '/bim/test.glb')
+    // const layer = new DC.VectorLayer('test')
+
+    // overlay.on(DC.MouseEventType.CLICK, (e) => {
+    //   console.log('e :>> ', e)
+    // })
+
+    const overlay = new DC.ModelPrimitive(pos, '/bim/test.glb')
+    const layer = new DC.PrimitiveLayer('test')
+
+    overlay.on(DC.MouseEventType.CLICK, (e) => {
+      console.log('e :>> ', e)
+      console.log(overlay.getNodes())
+    })
+
+    layer.addOverlay(overlay)
+    viewer.value?.addLayer(layer)
+    // viewer.value?.flyTo(layer)
+    viewer.value?.zoomToPosition(pos)
+  }
+
   const setupMap = () => {
     setupViewer(cesiumRef)
     setupLayer()
     viewer.value?.zoomToPosition(new DC.Position(119, 26, 80000))
     _onReady()
+    changeBaseLayer('3D')
+    test()
   }
 
   return {

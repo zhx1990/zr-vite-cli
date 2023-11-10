@@ -20,6 +20,7 @@ interface ServiceEnvConfigWithProxyPattern extends ServiceEnvConfig {
    * - 有多个后端请求实例时，需要创建不同的值
    */
   proxyPattern: '/api'
+  mapProxy: '/DataServer'
 }
 
 interface ImportMetaEnv {
@@ -70,14 +71,14 @@ interface ImportMetaEnv {
   readonly VITE_ROUTE_PLUGIN?: 'Y' | 'N'
   /** 是否是部署的vercel */
   readonly VITE_VERCEL?: 'Y' | 'N'
-   /* 登录模式 */
-   readonly VITE_LOGIN_TYPE:
-   | 'pwd-login'
-   | 'code-login'
-   | 'register'
-   | 'reset-pwd'
-   | 'bind-wechat'
-   | 'token'
+  /* 登录模式 */
+  readonly VITE_LOGIN_TYPE:
+    | 'pwd-login'
+    | 'code-login'
+    | 'register'
+    | 'reset-pwd'
+    | 'bind-wechat'
+    | 'token'
 }
 
 interface ImportMeta {

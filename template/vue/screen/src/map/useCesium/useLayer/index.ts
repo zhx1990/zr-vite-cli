@@ -1,7 +1,7 @@
 import type { ShallowRef } from 'vue'
 import { shallowRef, unref, toValue } from 'vue'
-import SuperGif from '@/utils/superGif/index.js'
 import * as Cesium from '@cesium/engine'
+import SuperGif from '@/utils/superGif/index.js'
 import { viewer } from '../useViewer'
 
 export enum LAYER_GROUP_IDS {

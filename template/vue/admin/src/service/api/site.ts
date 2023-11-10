@@ -2,8 +2,8 @@ import { request, resHandle } from '@/service/request'
 
 const Source = {
   siteConfig: '/cma/site/config',
-  siteTicketLogin: '/dx-forecast/web/site/ticketLogin',
-  siteBuildServerUrl: '/dx-forecast/web/site/buildServerUrl',
+  siteTicketLogin: '/mlr-project/web/site/ticketLogin',
+  siteBuildServerUrl: '/mlr-project/web/site/buildServerUrl',
   sitePwdLogin: '/sys/admin/site/pwdLogin',
   siteRedirect: '/sys/admin/site/redirect',
   siteLogout: '/sys/admin/site/logout',

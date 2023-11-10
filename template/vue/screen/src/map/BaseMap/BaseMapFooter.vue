@@ -16,7 +16,7 @@
 import { computed, h, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import type { MenuOption } from 'naive-ui'
-import { useRouteStore, useThemeStore } from '@/store'
+import { useRouteStore, useThemeStore, useThreeStore } from '@/store'
 import { translateMenuLabel } from '@/utils'
 import { useRouterPush } from '@/hooks'
 import type { IFooterSiteButtonPropsData } from './types'
@@ -41,6 +41,7 @@ const handleUpdateMenu = (_key: string, item: MenuOption) => {
   routerPush(menuItem.routePath)
 }
 
+const threeStore = useThreeStore()
 const footerSiteButtonData: IFooterSiteButtonPropsData[] = [
   // {
   //   label: '永泰站',
@@ -50,6 +51,9 @@ const footerSiteButtonData: IFooterSiteButtonPropsData[] = [
   // },
   {
     label: '福州站',
+    onClick() {
+      threeStore.setIsShowThree(true)
+    },
   },
   // {
   //   label: '闽清站',

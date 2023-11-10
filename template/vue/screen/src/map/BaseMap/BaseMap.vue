@@ -12,18 +12,18 @@
 </template>
 <script lang="ts" setup>
 import { onMounted, h } from 'vue'
-import { useScreenZoom, useModal } from '@/hooks'
 import { useMap, useLayer } from '@/map'
-import { PointDataDialog } from '@/components/BaseMark'
 import dayjs from 'dayjs'
+import { useModal } from '@/hooks'
+import { PointDataDialog } from '@/components/BaseMark'
+import { useThreeStore } from '@/store'
+
+const threeStore = useThreeStore()
 
 const { cesiumRef, setupMap } = useMap()
-const { elRef, setDomZoom } = useScreenZoom()
-const { createDialog } = useModal()
 
 onMounted(async () => {
   setupMap()
-  setDomZoom()
 })
 </script>
 <style lang="scss" scoped>

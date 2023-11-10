@@ -6,6 +6,7 @@ body,
 #app {
   height: 100%;
   overflow: hidden;
+  font-size: 14px;
 }
 
 .fs-table-columns-filter .component--list .component--list-item {

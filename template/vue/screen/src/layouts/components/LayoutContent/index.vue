@@ -1,4 +1,5 @@
 <template>
+  <LayoutCOntentBaseThree />
   <LayoutContentBaseMap v-if="showBaseMap" />
   <RouterView v-else v-slot="{ Component, route }">
     <Transition
@@ -22,8 +23,8 @@
 </template>
 
 <script setup lang="ts">
-import { useAppStore, useRouteStore, useThemeStore } from '@/store'
-import { LayoutContentBaseMap } from '../index'
+import { useAppStore, useRouteStore, useThemeStore, useThreeStore } from '@/store'
+import { LayoutContentBaseMap, LayoutCOntentBaseThree } from '../index'
 
 defineOptions({ name: 'LayoutContent' })
 

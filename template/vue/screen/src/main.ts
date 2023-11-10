@@ -1,4 +1,5 @@
 import { createApp, watch } from 'vue'
+import { isReady } from '@/map'
 import {
   setupNaive,
   setupWarnHandler,
@@ -6,9 +7,8 @@ import {
   setupFastCrud,
   setupCustomFsType,
   setupCesium,
-  setupZoom,
+  setupAmfeFlexible,
 } from '@/plugins'
-import { isReady } from '@/map'
 import BaseAppLoading from '@/components/BaseAppLoading/BaseAppLoading.vue'
 import App from './App.vue'
 import { setupDirectives } from './directives'
@@ -17,8 +17,6 @@ import { setupStore } from './store'
 import { setupI18n } from './locales'
 
 async function setupApp() {
-  setupZoom()
-
   setupAssets()
   // app loading
   const appLoading = createApp(BaseAppLoading)
@@ -50,6 +48,8 @@ async function setupApp() {
 
   // mount app
   app.mount('#app')
+
+  setupAmfeFlexible()
 
   const unwatch = watch(
     () => isReady.value,
