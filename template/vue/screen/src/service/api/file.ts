@@ -1,4 +1,4 @@
-import { request, resHandle } from '@/service/request'
+import { request, resHandle } from '@/utils/request'
 
 export const Source = {
   fileUploadOne: '/sys/admin/file/uploadOne',

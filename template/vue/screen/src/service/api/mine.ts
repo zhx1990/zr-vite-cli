@@ -1,4 +1,4 @@
-import { request, adapter } from '@/service/request'
+import { request, adapter } from '@/utils/request'
 
 const Source = {
   mineUserInfo: '/sys/admin/mine/userInfo',

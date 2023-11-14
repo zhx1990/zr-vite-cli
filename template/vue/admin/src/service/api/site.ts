@@ -1,4 +1,4 @@
-import { request, resHandle } from '@/service/request'
+import { request, resHandle } from '@/utils/request'
 
 const Source = {
   siteConfig: '/cma/site/config',
