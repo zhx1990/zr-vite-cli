@@ -7,8 +7,8 @@ const mapPicture: AuthRoute.Route = {
     requiresAuth: true,
     singleLayout: 'basic',
     order: 2,
-    imgPath: '/images/systemsNew/icon_nav4.png',
-    imgActivePath: '/images/systemsNew/icon_nav4_h.png',
+    imgPath: './images/systemsNew/icon_nav4.png',
+    imgActivePath: './images/systemsNew/icon_nav4_h.png',
   },
   children: [],
 }

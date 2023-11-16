@@ -54,28 +54,28 @@ const footerSiteButtonData: IFooterSiteButtonPropsData[] = [
     onClick() {
       // threeStore.setIsShowThree(true)
     },
-    imgPath: '/images/systemsNew/pic1.png',
+    imgPath: './images/systemsNew/pic1.png',
   },
   {
     label: '大坝工程',
     onClick() {
       threeStore.setIsShowThree(true)
     },
-    imgPath: '/images/systemsNew/pic2.png',
+    imgPath: './images/systemsNew/pic2.png',
   },
   {
     label: '大坝内观',
     onClick() {
       // threeStore.setIsShowThree(true)
     },
-    imgPath: '/images/systemsNew/pic3.png',
+    imgPath: './images/systemsNew/pic3.png',
   },
   {
     label: '机房',
     onClick() {
       // threeStore.setIsShowThree(true)
     },
-    imgPath: '/images/systemsNew/pic4.png',
+    imgPath: './images/systemsNew/pic4.png',
   },
   {
     label: '管理楼',

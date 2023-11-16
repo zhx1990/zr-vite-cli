@@ -1,21 +1,21 @@
 <template>
   <NSpace vertical>
     <LayerTooltipCollapse
-      img-path="/images/systems/icon_layer.png"
+      img-path="./images/systems/icon_layer.png"
       label="地图"
       panel-title="地图模式"
     >
       <LayerTooltipCollapseRadioGroup :data="LEGEND_TYPE_2" />
     </LayerTooltipCollapse>
     <LayerTooltipCollapse
-      img-path="/images/systems/icon_layer.png"
+      img-path="./images/systems/icon_layer.png"
       label="图层"
       panel-title="图层控制"
     >
       <LayerTooltipCollapseCheckboxGroup :data="layerData" @update:value="handleUpdateValue" />
     </LayerTooltipCollapse>
     <LayerTooltipCollapse
-      img-path="/images/systems/icon_layer.png"
+      img-path="./images/systems/icon_layer.png"
       label="工具"
       panel-title="标绘工具"
     >

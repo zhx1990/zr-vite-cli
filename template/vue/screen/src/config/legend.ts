@@ -14,22 +14,22 @@ export const LEGEND_TYPE_2 = [
   {
     value: '2D-IMG',
     label: '影像',
-    imgPath: '/images/systems/pic_map2.png',
+    imgPath: './images/systems/pic_map2.png',
   },
   {
     value: '2D-VEC',
     label: '地图',
-    imgPath: '/images/systems/pic_map1.png',
+    imgPath: './images/systems/pic_map1.png',
   },
   {
     value: '2D-TER',
     label: '地形',
-    imgPath: '/images/systems/pic_map3.png',
+    imgPath: './images/systems/pic_map3.png',
   },
   {
     value: '3D',
     label: '三维',
-    imgPath: '/images/systems/pic_map4.png',
+    imgPath: './images/systems/pic_map4.png',
   },
 ]
 
